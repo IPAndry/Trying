@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class AI : MonoBehaviour
 {
+    public const float baseSpeed = 3.0f;
+
     public float speed = 3.0f;
     public float obstacleRange = 5.0f;
 
@@ -11,6 +13,16 @@ public class AI : MonoBehaviour
 
     [SerializeField] private GameObject fireBall;
     private GameObject _fireball;
+
+    void Awake()
+    {
+        Messenger<float>.AddListener(GameEvent.SPEED_CHANGED, OnSpeedChanged);    
+    }
+
+    private void OnDestroy()
+    {
+        Messenger<float>.RemoveListener(GameEvent.SPEED_CHANGED, OnSpeedChanged);        
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -53,4 +65,9 @@ public class AI : MonoBehaviour
     {
         _alive = alive;
     }
+
+    private void OnSpeedChanged(float value)
+    {
+        speed = baseSpeed * value;
+    }    
 }
