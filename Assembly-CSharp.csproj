@@ -56,13 +56,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Memory\SceneController.cs" />
+    <Compile Include="Assets\Scripts\Shooter\Messenger.cs" />
     <Compile Include="Assets\Scripts\Memory\MemoryCard.cs" />
     <Compile Include="Assets\Scripts\FireSphere.cs" />
     <Compile Include="Assets\Scripts\IHaveADream.cs" />
     <Compile Include="Assets\Scripts\Spin.cs" />
     <Compile Include="Assets\Scripts\Controller.cs" />
     <Compile Include="Assets\Scripts\MouseLook.cs" />
+    <Compile Include="Assets\Scripts\Shooter\Settings.cs" />
     <Compile Include="Assets\Scripts\Targeting.cs" />
+    <Compile Include="Assets\Scripts\Shooter\GameEvent.cs" />
     <Compile Include="Assets\Scripts\Memory\ButtonRestart.cs" />
     <Compile Include="Assets\Scripts\Knock.cs" />
     <Compile Include="Assets\Scripts\Fireball.cs" />
@@ -71,9 +74,7 @@
     <Compile Include="Assets\Scripts\Shooter\UI.cs" />
     <Compile Include="Assets\Scripts\Shoot.cs" />
     <Compile Include="Assets\Scripts\KeyboardMove.cs" />
-    <Compile Include="Assets\Scripts\Shooter\Settings.cs" />
-    <Compile Include="Assets\Scripts\Shooter\Messenger.cs" />
-    <Compile Include="Assets\Scripts\Shooter\GameEvent.cs" />
+    <Compile Include="Assets\Scripts\3rd Point\OrbitCamera.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -628,6 +629,9 @@
     <Reference Include="Unity.Rider.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.2D.Sprite.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.VisualStudio.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
     </Reference>
@@ -636,9 +640,6 @@
     </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.2D.Sprite.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
