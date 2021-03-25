@@ -72,9 +72,10 @@
     <Compile Include="Assets\Scripts\AI.cs" />
     <Compile Include="Assets\Scripts\Character.cs" />
     <Compile Include="Assets\Scripts\Shooter\UI.cs" />
+    <Compile Include="Assets\Scripts\3rd Point\OrbitCamera.cs" />
     <Compile Include="Assets\Scripts\Shoot.cs" />
     <Compile Include="Assets\Scripts\KeyboardMove.cs" />
-    <Compile Include="Assets\Scripts\3rd Point\OrbitCamera.cs" />
+    <Compile Include="Assets\Scripts\Horror\WakeUp.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
